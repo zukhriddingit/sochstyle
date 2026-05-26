@@ -20,6 +20,10 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
+## Virtual Try-On
+
+Visit `/try-on` to test the real-time hairstyle overlay. The try-on page runs entirely in the browser and will prompt for camera access.
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:

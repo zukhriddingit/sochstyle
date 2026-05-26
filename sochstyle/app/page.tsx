@@ -1,5 +1,7 @@
-import { cookies } from 'next/headers'
-import { createClient } from '@/lib/supabase/server'
+import Link from 'next/link';
+import { cookies } from 'next/headers';
+import { createClient } from '@/lib/supabase/server';
+import { Button } from '@/components/ui/button';
 
 export default async function Home() {
   const cookieStore = cookies()
@@ -15,6 +17,14 @@ export default async function Home() {
         <p className="max-w-[700px] text-lg text-muted-foreground">
           Welcome to SochStyle, the best place to discover new hairstyles and connect with talented barbers.
         </p>
+        <div className="mt-4 flex flex-wrap items-center gap-3">
+          <Link href="/try-on">
+            <Button>Try virtual styling</Button>
+          </Link>
+          <Link href="/barbers">
+            <Button variant="outline">Browse barbers</Button>
+          </Link>
+        </div>
       </div>
 
       <div className="mt-8">
